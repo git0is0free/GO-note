@@ -24,7 +24,7 @@ func main() {
     product := 0
     swap1(&i, &j, &product)
     fmt.Println(i, j, product)
-    a, b, p := swap2(a, b)
+    i, j, product := swap2(i, j)
     fmt.Println(a, b, p)
     c := 64
     d := 23
