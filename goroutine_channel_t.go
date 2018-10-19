@@ -14,7 +14,7 @@ func main() {
     go func() { // 在其他gouroutine中执行匿名函数
         for {
             i := rand.Intn(6)
-            fmt.Printf(i)
+            fmt.Printf("channels is: %d\n", i)
             channels[i] <- true // rand.Intn(n int)的用途是产生一个不大于n的随机数
         }                                  // 发送数据到随机出现的通道
     }()
